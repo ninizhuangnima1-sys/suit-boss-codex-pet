@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Suit Boss · 动作预览 v3</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">CODEX PET · STATE VIEWER</p>
+          <h1>Suit Boss 动作预览</h1>
+          <p class="subtitle">最终版 v3 · 已通过确认并安装</p>
+        </div>
+        <div class="status-pill"><span></span> Final v3</div>
+      </header>
+
+      <section class="viewer-layout">
+        <article class="stage-card">
+          <div class="stage-heading">
+            <div>
+              <p class="eyebrow" id="stateKind">STATE VIEWER</p>
+              <h2 id="stateTitle">闲置</h2>
+              <p class="state-meta" id="stateMeta">Row 0 · 6 frames</p>
+            </div>
+            <div class="stage-controls">
+              <button id="playButton" type="button" aria-label="暂停或播放">Ⅱ&nbsp; 暂停</button>
+              <select id="speedSelect" aria-label="播放速度">
+                <option value="1.5">0.67×</option>
+                <option value="1" selected>1×</option>
+                <option value="0.7">1.4×</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="checkerboard stage-canvas">
+            <img id="stageImage" alt="当前宠物动作帧" />
+          </div>
+
+          <div class="timeline" id="timeline" aria-label="逐帧查看"></div>
+          <p class="description" id="stateDescription"></p>
+          <div class="review-note" id="reviewNote"></div>
+        </article>
+
+        <section class="state-grid" id="stateGrid" aria-label="动作状态列表"></section>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
