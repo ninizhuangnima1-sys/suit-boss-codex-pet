@@ -1,4 +1,4 @@
-# Suit Boss — Codex Animated Pet
+# Fengge — Codex Animated Pet
 
 Suit Boss is a polished 3D-toy-style animated pet for the Codex desktop app: a mature businessman in a navy suit with an orange phone, black briefcase, cigarette, and continuously animated smoke.
 
